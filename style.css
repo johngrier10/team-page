@@ -30,26 +30,15 @@ h2{
 }
 
 h4{
+    
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 2.1rem;
     font-family: 'Poppins', sans-serif;
+    margin-top: 0;
 }
 
-.row h5{
-    position: absolute;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.325rem;
-  transform: rotate(90deg);  
-  top: 3.7rem;
-  right: -5.3rem;
-  font-family: 'PT Serif', serif;
-  letter-spacing: .1rem;
 
-  
-
-}
 
 
 p{
@@ -72,7 +61,10 @@ p{
  flex-direction: column;
 
  
+ 
 }
+
+
 
 .copy{
     padding: 0 1rem;
@@ -81,6 +73,19 @@ p{
     width: 100%;
     padding: 1rem 0;
     position: relative;
+}
+
+h5{
+
+    font-size: 1rem;
+    
+    writing-mode:vertical-lr ;
+    position: absolute;
+    height: 100%;
+    z-index: 10;
+    top: 1.2rem;
+    right: -3rem;
+
 }
 
 .mt13{
@@ -129,10 +134,7 @@ p{
         padding: 0 2rem;
     }
 
-    .row h5{
-        top: 3rem;
-        right: -4rem;
-    }
+
 
     p{
         font-size: 1.8rem;
@@ -147,4 +149,13 @@ p{
         padding-top: 0;
     }
 
+
+    h5{
+        top: 0;
+        right: -1rem;
+    }
+    .row:nth-child(2n) h5{
+
+        padding-top: 10rem;
+      }
   }
